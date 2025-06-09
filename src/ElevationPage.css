@@ -1,0 +1,258 @@
+/* Copy all styles from SharedNewPages.css and add these elevation-specific styles */
+
+/* Elevation Page Styles */
+.elevation-page {
+  background-color: #111827;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Elevation Services */
+.elevation-services {
+  padding: 4rem 1.5rem;
+  background-color: rgba(31, 41, 55, 0.5);
+}
+
+.services-content {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.services-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.services-description {
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.services-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fbbf24;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.services-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.services-image {
+  width: 100%;
+  height: 16rem;
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(5, 150, 105, 0.1));
+}
+
+@media (min-width: 1024px) {
+  .services-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Comprehensive Solutions */
+.comprehensive-solutions {
+  padding: 4rem 1.5rem;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.solutions-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #111827;
+}
+
+/* Featured Elevation */
+.featured-elevation {
+  padding: 4rem 1.5rem;
+  background-color: #1f2937;
+}
+
+.featured-content {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.featured-label {
+  display: inline-block;
+  background-color: #fbbf24;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.featured-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.featured-description {
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.featured-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.highlight-icon {
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.highlight-content {
+  flex: 1;
+}
+
+.highlight-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.highlight-text {
+  color: #d1d5db;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.featured-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.featured-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-image {
+  width: 100%;
+  height: 20rem;
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(220, 38, 38, 0.1));
+}
+
+@media (min-width: 1024px) {
+  .featured-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Process Section */
+.elevation-process {
+  padding: 4rem 1.5rem;
+  background-color: rgba(31, 41, 55, 0.5);
+}
+
+.process-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.process-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.process-subtitle {
+  color: #d1d5db;
+  max-width: 42rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.process-steps {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.step-card {
+  background-color: #374151;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fbbf24;
+  margin-bottom: 1rem;
+}
+
+.step-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.step-description {
+  color: #d1d5db;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Include all navigation, buttons, footer styles from SharedNewPages.css */
