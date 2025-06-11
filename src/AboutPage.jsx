@@ -1,6 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './AboutPage.css'
+import heroImage from './assets/about_hero.jpg'
+import projectShowcaseImg1 from './assets/project_img1.jpg'
+import projectShowcaseImg2 from './assets/project_img2.jpg'
+import projectShowcaseImg3 from './assets/project_img3.jpg'
+import projectShowcaseImg4 from './assets/project_img4.jpg'
+import JourneyImage from './assets/about_journey_img.jpg'
 
 const AboutPage = () => {
   return (
@@ -41,6 +47,7 @@ const AboutPage = () => {
             <div className="about-hero-visual">
               <div className="hero-image-container">
                 <div className="hero-image">
+                  <img src= {heroImage} alt="Interior Design" className="hero-img" />
                   <div className="hero-image-overlay"></div>
                 </div>
               </div>
@@ -63,6 +70,7 @@ const AboutPage = () => {
           <div className="showcase-grid">
             <div className="showcase-item showcase-large">
               <div className="showcase-image showcase-image-1">
+                <img src={projectShowcaseImg1} alt="Modern Corporate Office" className="showcase-img"/>
                 <div className="showcase-overlay">
                   <h3 className="showcase-project-title">Modern Corporate Office</h3>
                   <p className="showcase-project-type">Commercial Design</p>
@@ -72,6 +80,7 @@ const AboutPage = () => {
             
             <div className="showcase-item">
               <div className="showcase-image showcase-image-2">
+                <img src={projectShowcaseImg2} alt="Luxury Apartment" className="showcase-img"/>
                 <div className="showcase-overlay">
                   <h3 className="showcase-project-title">Luxury Apartment</h3>
                   <p className="showcase-project-type">Residential Design</p>
@@ -81,6 +90,7 @@ const AboutPage = () => {
             
             <div className="showcase-item">
               <div className="showcase-image showcase-image-3">
+                <img src={projectShowcaseImg3} alt="Contemporary Loft" className="showcase-img"/>
                 <div className="showcase-overlay">
                   <h3 className="showcase-project-title">Contemporary Loft</h3>
                   <p className="showcase-project-type">Urban Living</p>
@@ -90,18 +100,10 @@ const AboutPage = () => {
             
             <div className="showcase-item">
               <div className="showcase-image showcase-image-4">
+                <img src={projectShowcaseImg4} alt="Boutique Hotel" className="showcase-img"/>
                 <div className="showcase-overlay">
                   <h3 className="showcase-project-title">Boutique Hotel</h3>
                   <p className="showcase-project-type">Hospitality Design</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="showcase-item">
-              <div className="showcase-image showcase-image-5">
-                <div className="showcase-overlay">
-                  <h3 className="showcase-project-title">Executive Workspace</h3>
-                  <p className="showcase-project-type">Office Design</p>
                 </div>
               </div>
             </div>
@@ -197,12 +199,13 @@ const AboutPage = () => {
               
               <div className="journey-buttons">
                 <Link to="/contact" className="btn-primary">Get In Touch</Link>
-                <Link to="/" className="btn-secondary">Back to Home</Link>
+                <Link to="/" className="btn-secondary">Back To Home</Link>
               </div>
             </div>
             
             <div className="journey-visual">
               <div className="journey-image">
+                <img src={JourneyImage} alt="Our Journey" />
                 <div className="journey-image-overlay"></div>
               </div>
             </div>
