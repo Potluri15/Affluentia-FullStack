@@ -207,7 +207,7 @@
 /* Process Section */
 .process-section {
   padding: 4rem 1.5rem;
-  background-color: rgba(31, 41, 55, 0.5);
+  background-color: #F3E9D2;
 }
 
 .section-header {
@@ -286,6 +286,7 @@
 
 /* Gallery Section */
 .gallery-section {
+  background-color: #1D251A;
   padding: 4rem 1.5rem;
 }
 
