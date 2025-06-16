@@ -17,6 +17,7 @@ const HomePage = () => {
             <Link to="/residential" className="nav-link">Residential</Link>
             <Link to="/commercial" className="nav-link">Commercial</Link>
             <Link to="/architecture" className="nav-link">Architecture</Link>
+            <Link to="/landscaping" className="nav-link">Landscaping</Link>
             <a href="#" className="nav-link">Contact</a>
           </div>
         </div>

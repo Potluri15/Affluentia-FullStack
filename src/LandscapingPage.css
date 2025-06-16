@@ -1,4 +1,4 @@
-/* General Layout */
+/* === BASE STYLES === */
 body, .landscaping-page {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ a {
   color: inherit;
 }
 
-/* Navbar */
+/* === NAVBAR === */
 .navbar {
   background-color: #222;
   color: white;
@@ -20,6 +20,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar-right a {
@@ -28,15 +29,16 @@ a {
   font-weight: 500;
 }
 
-/* Hero Section */
+/* === HERO SECTION === */
 .hero {
   position: relative;
-  height: 75vh;
+  min-height: 75vh;
   background: url('public/images/adrian-hernandez-unsplash1.jpg.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 .hero-overlay {
@@ -53,7 +55,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0rem;
 }
 
 .hero-title h1 {
@@ -65,9 +66,8 @@ a {
 .hero-content p {
   font-size: 20px;
   max-width: 700px;
-  text-align: center;
-  margin-bottom: -2rem;
   line-height: 1.5;
+  margin-bottom: -2rem;
 }
 
 .hero-button {
@@ -80,20 +80,21 @@ a {
   font-weight: 600;
 }
 
-/* Intro Section */
+/* === INTRO SECTION === */
 .intro-section {
   display: flex;
-  height: 50vh;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 35px 20px;
   background-color: #1D251A;
-  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .intro-text {
   color: #F3E9D2;
-  max-width: 900px;
+  max-width: 600px;
+  flex: 1 1 300px;
 }
 
 .intro-text h2 {
@@ -105,16 +106,15 @@ a {
 .intro-text p {
   font-size: 20px;
   font-weight: 100;
-  margin-bottom: 75px;
+  margin-bottom: 2rem;
 }
 
 .intro-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 200px;
-  margin-top: 20px;
+  gap: 60px;
+  margin-top: 2rem;
 }
 
 .icon-box {
@@ -126,14 +126,14 @@ a {
 }
 
 .intro-image img {
-  width: 320px;
-  height: 610px;
-  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
   border-radius: 60px;
   object-fit: cover;
 }
 
-/* Gallery */
+/* === GALLERY === */
 .landscape-gallery {
   font-size: 27px;
   font-weight: 200;
@@ -153,6 +153,7 @@ a {
 .gallery-item img {
   width: 100%;
   border-radius: 50px;
+  object-fit: cover;
 }
 
 .gallery-caption {
@@ -166,20 +167,22 @@ a {
   margin-bottom: 0.25rem;
 }
 
+/* === CTA SECTION === */
 .cta-section {
   display: flex;
-  height: 35vh;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 35px 20px;
   background: none;
-  background-color: #000000 !important;
-  flex-wrap: wrap;
+  background-color: #000000;
+  gap: 2rem;
 }
 
 .cta-text {
   color: #F3E9D2;
-  max-width: 700px;
+  max-width: 600px;
+  flex: 1 1 300px;
 }
 
 .cta-text h2 {
@@ -204,14 +207,21 @@ a {
   background-color: #e5dac4;
 }
 
+.cta-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
 .cta-image img {
-  width: 530px;
-  height: 400px;
+  width: 100%;
+  max-width: 530px;
+  height: auto;
   border-radius: 60px;
   object-fit: cover;
 }
 
-/* Footer */
+/* === FOOTER === */
 .footer {
   background-color: #222;
   color: white;
@@ -236,4 +246,111 @@ a {
   border-top: 1px solid #444;
   padding-top: 1rem;
   text-align: center;
+}
+
+/* === GENERAL IMAGE HANDLING === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === RESPONSIVE MEDIA QUERIES === */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .intro-section,
+  .cta-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text,
+  .cta-text {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .intro-icons {
+    gap: 40px;
+  }
+
+  .gallery-grid {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .gallery-item img {
+    border-radius: 30px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .hero-title h1 {
+    font-size: 36px;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .cta-text h2,
+  .intro-text h2 {
+    font-size: 28px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+/* Small Devices */
+@media (max-width: 480px) {
+  .hero-title h1 {
+    font-size: 26px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+
+  .intro-icons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
 }
