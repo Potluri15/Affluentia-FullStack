@@ -11,6 +11,7 @@ import BuildingPlanningPage from './BuildingPlanningPage'
 import ElevationPage from './ElevationPage'
 import LandscapingPage from './LandscapingPage'
 import ContactPage from './ContactPage'
+import Projects from './Projects'
 
 function App() {
   return (

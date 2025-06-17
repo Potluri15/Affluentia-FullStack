@@ -112,17 +112,24 @@ body, html {
   gap: 2rem;
   align-items: center;
   justify-content: center;
-}
-
-.highlight-content img {
-  max-width: 100%;
-  border-radius: 50px;
+  flex-wrap: wrap;
 }
 
 .highlight-text {
   max-width: 500px;
   text-align: center;
+  flex: 1;
 }
+
+.highlight-content img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 30px;
+  height: auto;
+  flex: 1;
+  object-fit: cover;
+}
+
 
 /* Footer */
 .footer {
@@ -151,3 +158,22 @@ body, html {
 .footer-links ul li {
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .highlight-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlight-text {
+    max-width: 100%;
+  }
+
+  .highlight-content img {
+    width: 90%;
+    max-width: 300px; /* Adjust image size */
+    margin-top: 1rem;
+    border-radius: 20px;
+  }
+}
+
