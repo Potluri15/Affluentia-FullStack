@@ -1,0 +1,517 @@
+/* Architecture Page Specific Styles */
+
+.architecture-page {
+    background-color: #111827;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Architecture Hero */
+.architecture-hero {
+    padding: 4rem 1.5rem;
+}
+
+.architecture-hero .hero-content {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 48rem;
+}
+
+@media (min-width: 1024px) {
+    .architecture-hero .hero-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Architecture Services */
+.architecture-services {
+    padding: 4rem 1.5rem;
+    background-color: rgba(31, 41, 55, 0.5);
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.services-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.services-subtitle {
+    color: #d1d5db;
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.service-card {
+    background-color: #374151;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service-description {
+    color: #d1d5db;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* Featured Projects */
+.featured-projects {
+    padding: 4rem 1.5rem;
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+.projects-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #111827;
+}
+
+.projects-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    height: 200px;
+    position: relative;
+}
+
+.project-image-1 {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+}
+
+.project-image-2 {
+    background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+}
+
+.project-image-3 {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-info {
+    color: white;
+}
+
+.project-category {
+    font-size: 0.75rem;
+    color: #fbbf24;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.project-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.project-description {
+    font-size: 0.875rem;
+    color: #d1d5db;
+}
+
+/* Design Philosophy */
+.design-philosophy {
+    padding: 4rem 1.5rem;
+    background-color: #1f2937;
+}
+
+.philosophy-content {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+}
+
+.philosophy-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.philosophy-description {
+    color: #d1d5db;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.philosophy-principles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.principle-item {
+    padding: 1rem;
+    background-color: #374151;
+    border-radius: 0.5rem;
+}
+
+.principle-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #fbbf24;
+}
+
+.principle-text {
+    color: #d1d5db;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.philosophy-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.philosophy-image {
+    width: 100%;
+    height: 20rem;
+    background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.philosophy-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(5, 150, 105, 0.1));
+}
+
+@media (min-width: 1024px) {
+    .philosophy-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Flagship Project */
+.flagship-project {
+    padding: 4rem 1.5rem;
+}
+
+.flagship-content {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+}
+
+.flagship-image {
+    width: 100%;
+    height: 24rem;
+    background: linear-gradient(135deg, #374151 0%, #4b5563 30%, #fbbf24 100%);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.flagship-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(251, 191, 36, 0.1));
+}
+
+.flagship-text {
+    text-align: left;
+}
+
+.flagship-label {
+    display: inline-block;
+    background-color: #fbbf24;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.flagship-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.flagship-description {
+    color: #d1d5db;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.flagship-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fbbf24;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.875rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.flagship-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+    .flagship-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .flagship-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Architecture Process */
+.architecture-process {
+    padding: 4rem 1.5rem;
+    background-color: rgba(31, 41, 55, 0.5);
+}
+
+.process-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.process-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.process-subtitle {
+    color: #d1d5db;
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.process-timeline {
+    max-width: 48rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    bottom: 1.5rem;
+    width: 2px;
+    background-color: #374151;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-marker {
+    width: 3rem;
+    height: 3rem;
+    background-color: #fbbf24;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-number {
+    color: black;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.timeline-content {
+    flex: 1;
+    padding-top: 0.5rem;
+}
+
+.timeline-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-description {
+    color: #d1d5db;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .process-timeline::before {
+        left: 1rem;
+    }
+
+    .timeline-item {
+        gap: 1.5rem;
+    }
+
+    .timeline-marker {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .timeline-number {
+        font-size: 0.875rem;
+    }
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 4rem 1.5rem;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.cta-description {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-cta-primary {
+    background-color: black;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-cta-primary:hover {
+    background-color: #374151;
+}
+
+.btn-cta-secondary {
+    border: 2px solid black;
+    color: black;
+    background: transparent;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-cta-secondary:hover {
+    background-color: black;
+    color: white;
+}
